@@ -84,10 +84,9 @@
 			</div>
 			<div class="bg-white shadow-md rounded px-8 py-4">
 				<button type="submit"
-					class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full"
-					hx-indicator="#loading-indicator" hx-disable>
-					<span id="button-text">Submit</span>
-					<span id="loading-indicator" class="hidden">Loading...</span>
+					class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">
+					<span id="submit-text">Gerar projeto</span>
+					<span id="submit-loading">...</span>
 				</button>
 			</div>
 		</div>
@@ -96,6 +95,8 @@
 		document.addEventListener('DOMContentLoaded', () => {
 			const form = document.querySelector('form');
 			const submitButton = document.querySelector('button[type="submit"]');
+			const submitText = document.getElementById('submit-text');
+			const submitLoading = document.getElementById('submit-loading');
 
 			const checkFormValidity = () => {
 				if (form.checkValidity()) {
@@ -113,6 +114,27 @@
 
 			// Initial check on page load
 			checkFormValidity();
+
+			// Log request and response
+			form.addEventListener('submit', (event) => {
+				console.log('Request sent:', new FormData(form));
+			});
+
+			document.body.addEventListener('htmx:afterRequest', (event) => {
+				submitText.style.display = 'inline-block';
+				submitLoading.style.display = 'none';
+				submitButton.disabled = false;
+				submitButton.classList.remove('bg-gray-400', 'cursor-not-allowed');
+				submitButton.classList.add('bg-blue-500', 'hover:bg-blue-700');
+			});
+
+			document.body.addEventListener('htmx:beforeRequest', (event) => {
+				submitText.style.display = 'none';
+				submitLoading.style.display = 'inline-block';
+				submitButton.disabled = true;
+				submitButton.classList.remove('bg-blue-500', 'hover:bg-blue-700');
+				submitButton.classList.add('bg-gray-400', 'cursor-not-allowed');
+			});
 		});
 	</script>
 </body>
