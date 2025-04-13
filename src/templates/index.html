@@ -12,11 +12,15 @@
 </head>
 
 <body>
-	<div class="bg-gray-800 text-white py-4">
-		<h1 class="text-center text-3xl font-bold">Cricket AI</h1>
+	<div class="bg-slate-200 text-black flex flex-col items-center justify-center fixed top-0 left-0 w-full z-10 shadow-md">
+		<img class="w-24" src="./assets/logo.png" alt="">
+		<!-- <h3 class="px-4">Está começando na programação e quer criar um projeto pessoal, mas não sabe por onde começar? Nosso simpático "grilo" está aqui para te ajudar a transformar suas ideias em um projeto prático e divertido para colocar seus conhecimentos em ação!</h3> -->
 	</div>
-	<div class="flex justify-center items-center min-h-[90vh]">
-		<div class="w-full max-w-lg max-h-[80vh] p-4 flex flex-col" id="form-container">
+	<div class="w-full flex flex-col items-center justify-center mt-24">
+		<h3 class="px-2 mt-2 max-w-[600px] text-center"><b>Quer criar um projeto pessoal, mas não sabe por onde começar?</b><br/>Nosso simpático <i><b>"grilo"</b></i> está aqui para te ajudar a transformar suas ideias em um projeto prático e divertido para colocar seus conhecimentos em ação 😊</h3>
+	</div>
+	<div class="flex justify-center items-center min-h-[74vh]">
+		<div class="w-full max-w-lg max-h-[70vh] p-4 flex flex-col" id="form-container">
 			<div class="flex-grow overflow-y-auto">
 				<form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" hx-post="/process"
 					hx-trigger="click from:button[type='submit']" hx-swap="outerHTML" hx-target="#form-container">
@@ -86,7 +90,7 @@
 				<button type="submit"
 					class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">
 					<span id="submit-text">Gerar projeto</span>
-					<span id="submit-loading">...</span>
+					<span id="submit-loading" class="hidden animate-pulse text-white">Carregando...</span>
 				</button>
 			</div>
 		</div>
@@ -126,6 +130,7 @@
 				submitButton.disabled = false;
 				submitButton.classList.remove('bg-gray-400', 'cursor-not-allowed');
 				submitButton.classList.add('bg-blue-500', 'hover:bg-blue-700');
+				submitLoading.classList.add('hidden');
 			});
 
 			document.body.addEventListener('htmx:beforeRequest', (event) => {
@@ -134,6 +139,7 @@
 				submitButton.disabled = true;
 				submitButton.classList.remove('bg-blue-500', 'hover:bg-blue-700');
 				submitButton.classList.add('bg-gray-400', 'cursor-not-allowed');
+				submitLoading.classList.remove('hidden');
 			});
 		});
 	</script>

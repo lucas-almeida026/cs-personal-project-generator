@@ -1,95 +1,68 @@
 {
-  "name": "PlanilhaAuto",
-  "description": "aplicativo que permite preencher planilhas sem precisar de um software, utilizando tecnologia undefined, permitindo aos usuários tirar foto do papel e a planilha preencher sozinha.",
+  "name": "AutoChef",
+  "description": "Aplicativo desktop de automação de receitas, que pede os ingredientes e as instruções no site, para criar e gerenciar receitas personalizadas com base nos recursos disponíveis.",
   "tasks": [
     {
-      "name": "Pesquisar tecnologias undefined",
-      "description": "pesquisar as principais tecnologias de desenvolvimento web que podem ser utilizadas para criar um aplicativo como o PlanilhaAuto, considerando o tempo e recursos disponíveis.",
+      "name": "Criar tela inicial com menu principal",
+      "description": "Desenvolver uma interface gráfica clara para apresentar as opções do aplicativo, incluindo a possibilidade de criar e gerenciar receitas.",
       "related_topics": [
-        "Flutter",
-        "Firebase",
-        "TensorFlow"
+        "Interface Gráfica",
+        "Menu principal",
+        "Programação orientada a objetos"
       ]
     },
     {
-      "name": "Desenvolver modelo de reconhecimento de imagem",
-      "description": "desenvolver um modelo de reconhecimento de imagem que possa extrair informações relevantes da imagem do papel, permitindo a preencher planilhas automaticamente.",
+      "name": "Conectar ao site de receitas e ingredientes",
+      "description": "Desenvolver uma conexão segura com um servidor web para extrair as informações das receitas, ingredientes e medidas.",
       "related_topics": [
-        "TensorFlow",
-        "Machine Learning",
-        "Computer Vision"
+        "Conexões HTTP",
+        "Web scraping",
+        "Segurança de dados"
       ]
     },
     {
-      "name": "Criar interface do usuário",
-      "description": "criar uma interface do usuário intuitiva que permita aos usuários tirar foto do papel e a planilha preencher sozinha, considerando as limitações técnicas do aplicativo.",
+      "name": "Criar sistema de receitas com base em recursos disponíveis",
+      "description": "Desenvolver um algoritmo que faça recomendações de receitas com base nos ingredientes e medidas disponíveis, sugerindo ajustes para maximizar a eficiência.",
       "related_topics": [
-        "Flutter",
-        "Design de Interface",
-        "Experiência do Usuário"
+        "Algoritmos de recomendação",
+        "Optimização linear",
+        "Programação dinâmica"
       ]
     },
     {
-      "name": "Integrate model e interface com backend",
-      "description": "integrar o modelo de reconhecimento de imagem com a interface do usuário, permitindo que os dados extraídos sejam armazenados em um banco de dados ou servidores remotos.",
+      "name": "Desenvolver base de dados para armazenar receitas e ingredientes",
+      "description": "Criar uma estrutura de dados eficiente para armazenar as receitas, incluindo os ingredientes, medidas e instruções, permitindo a busca rápida e eficiente.",
       "related_topics": [
-        "Firebase",
-        "Node.js",
-        "Backend"
+        "Banco de dados relacional",
+        "Armazenamento de dados em arquivo",
+        "Indexação de dados"
       ]
     },
     {
-      "name": "Desenvolver sistema de armazenamento",
-      "description": "desenvolver um sistema de armazenamento eficiente que permita aos usuários acessar e manipular suas planilhas preenchidas automaticamente.",
+      "name": "Desenvolver sistema de prioridade e favoritismo para as receitas",
+      "description": "Criar uma interface que permita aos usuários dar prioridade a certas receitas, criar favoris e realizar aquisições personalizadas.",
       "related_topics": [
-        "Firebase Storage",
-        "Cloud Storage",
-        "S3"
+        "Interfaces gráficas",
+        "Programação orientada a objetos",
+        "Algoritmos de busca linear"
       ]
     },
     {
-      "name": "Testar e refinar",
-      "description": "testar o aplicativo com diferentes cenários de entrada, refinando a interface do usuário e o modelo de reconhecimento de imagem para garantir uma experiência de uso fluída.",
+      "name": "Implementar sistema de atualização automática das receitas e ingredientes",
+      "description": "Desenvolver uma conexão que permita a atualização regular das receitas e ingredientes, garantindo que o aplicativo esteja sempre atualizado.",
       "related_topics": [
-        "Teste de Usuário",
-        "Feedback",
-        "Iteração"
+        "Conexões HTTP",
+        "Web scraping",
+        "Programação em segundo plano"
       ]
     },
     {
-      "name": "Documentar e publicar",
-      "description": "documentar o aplicativo e criar uma plataforma de divulgação eficaz para compartilhar o PlanilhaAuto com outros usuários.",
+      "name": "Testar e depurar o aplicativo antes do lançamento final",
+      "description": "Realizar testes de funcionalidade, usabilidade e estabilidade para garantir que o aplicativo esteja pronto para uso.",
       "related_topics": [
-        "Documentação",
-        "Marketing",
-        "Divulgação"
-      ]
-    },
-    {
-      "name": "Manter e melhorar",
-      "description": "manter o aplicativo atualizado, monitorando as necessidades dos usuários e implementando melhorias contínuas para garantir a longevidade do PlanilhaAuto.",
-      "related_topics": [
-        "Manutenção",
-        "Iteração",
-        "Melhoria Contínua"
-      ]
-    },
-    {
-      "name": "Análise e otimização",
-      "description": "realizar análises periódicas para identificar áreas de otimização e implementar melhorias nos sistemas e processos do aplicativo.",
-      "related_topics": [
-        "Análise de Desempenho",
-        "Otimização",
-        "Aprendizado Continuo"
-      ]
-    },
-    {
-      "name": "Monitorar e feedback",
-      "description": "monitorar a experiência do usuário, coletar feedback e realizar análises para garantir que o aplicativo atenda às necessidades dos usuários.",
-      "related_topics": [
-        "Feedback",
-        "Análise de Usuário",
-        "Monitoramento"
+        "Testes unitários",
+        "Testes de integração",
+        "Debugging"
       ]
     }
   ]

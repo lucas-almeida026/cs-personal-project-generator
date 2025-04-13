@@ -1,96 +1,69 @@
-[item-start](project)
-	[string](name) PlanilhaAuto
-	[string](description) aplicativo que permite preencher planilhas sem precisar de um software, utilizando tecnologia undefined, permitindo aos usuários tirar foto do papel e a planilha preencher sozinha.
-	[list-start](tasks)
-		[item-start](task1)
-			[string](name) Pesquisar tecnologias undefined
-			[string](description) pesquisar as principais tecnologias de desenvolvimento web que podem ser utilizadas para criar um aplicativo como o PlanilhaAuto, considerando o tempo e recursos disponíveis.
-			[list-start](related_topics)
-				[string] Flutter
-				[string] Firebase
-				[string] TensorFlow
-			[list-end]
-		[item-end]
-		[item-start](task2)
-			[string](name) Desenvolver modelo de reconhecimento de imagem
-			[string](description) desenvolver um modelo de reconhecimento de imagem que possa extrair informações relevantes da imagem do papel, permitindo a preencher planilhas automaticamente.
-			[list-start](related_topics)
-				[string] TensorFlow
-				[string] Machine Learning
-				[string] Computer Vision
-			[list-end]
-		[item-end]
-		[item-start](task3)
-			[string](name) Criar interface do usuário
-			[string](description) criar uma interface do usuário intuitiva que permita aos usuários tirar foto do papel e a planilha preencher sozinha, considerando as limitações técnicas do aplicativo.
-			[list-start](related_topics)
-				[string] Flutter
-				[string] Design de Interface
-				[string] Experiência do Usuário
-			[list-end]
-		[item-end]
-		[item-start](task4)
-			[string](name) Integrate model e interface com backend
-			[string](description) integrar o modelo de reconhecimento de imagem com a interface do usuário, permitindo que os dados extraídos sejam armazenados em um banco de dados ou servidores remotos.
-			[list-start](related_topics)
-				[string] Firebase
-				[string] Node.js
-				[string] Backend
-			[list-end]
-		[item-end]
-		[item-start](task5)
-			[string](name) Desenvolver sistema de armazenamento
-			[string](description) desenvolver um sistema de armazenamento eficiente que permita aos usuários acessar e manipular suas planilhas preenchidas automaticamente.
-			[list-start](related_topics)
-				[string] Firebase Storage
-				[string] Cloud Storage
-				[string] S3
-			[list-end]
-		[item-end]
-		[item-start](task6)
-			[string](name) Testar e refinar
-			[string](description) testar o aplicativo com diferentes cenários de entrada, refinando a interface do usuário e o modelo de reconhecimento de imagem para garantir uma experiência de uso fluída.
-			[list-start](related_topics)
-				[string] Teste de Usuário
-				[string] Feedback
-				[string] Iteração
-			[list-end]
-		[item-end]
-		[item-start](task7)
-			[string](name) Documentar e publicar
-			[string](description) documentar o aplicativo e criar uma plataforma de divulgação eficaz para compartilhar o PlanilhaAuto com outros usuários.
-			[list-start](related_topics)
-				[string] Documentação
-				[string] Marketing
-				[string] Divulgação
-			[list-end]
-		[item-end]
-		[item-start](task8)
-			[string](name) Manter e melhorar
-			[string](description) manter o aplicativo atualizado, monitorando as necessidades dos usuários e implementando melhorias contínuas para garantir a longevidade do PlanilhaAuto.
-			[list-start](related_topics)
-				[string] Manutenção
-				[string] Iteração
-				[string] Melhoria Contínua
-			[list-end]
-		[item-end]
-		[item-start](task9)
-			[string](name) Análise e otimização
-			[string](description) realizar análises periódicas para identificar áreas de otimização e implementar melhorias nos sistemas e processos do aplicativo.
-			[list-start](related_topics)
-				[string] Análise de Desempenho
-				[string] Otimização
-				[string] Aprendizado Continuo
-			[list-end]
-		[item-end]
-		[item-start](task10)
-			[string](name) Monitorar e feedback
-			[string](description) monitorar a experiência do usuário, coletar feedback e realizar análises para garantir que o aplicativo atenda às necessidades dos usuários.
-			[list-start](related_topics)
-				[string] Feedback
-				[string] Análise de Usuário
-				[string] Monitoramento
-			[list-end]
-		[item-end]
-	[list-end]
+[item-start](project)  
+	[string](name) AutoChef  
+	[string](description) Aplicativo desktop de automação de receitas, que pede os ingredientes e as instruções no site, para criar e gerenciar receitas personalizadas com base nos recursos disponíveis.  
+	[list-start](tasks)  
+		[item-start](task1)  
+			[string](name) Criar tela inicial com menu principal  
+			[string](description) Desenvolver uma interface gráfica clara para apresentar as opções do aplicativo, incluindo a possibilidade de criar e gerenciar receitas.  
+			[list-start](related_topics)  
+				[string] Interface Gráfica 
+				[string] Menu principal  
+				[string] Programação orientada a objetos  
+			[list-end]  
+		[item-end]  
+		[item-start](task2)  
+			[string](name) Conectar ao site de receitas e ingredientes  
+			[string](description) Desenvolver uma conexão segura com um servidor web para extrair as informações das receitas, ingredientes e medidas.  
+			[list-start](related_topics)  
+				[string] Conexões HTTP  
+				[string] Web scraping  
+				[string] Segurança de dados  
+			[list-end]  
+		[item-end]  
+		[item-start](task3)  
+			[string](name) Criar sistema de receitas com base em recursos disponíveis  
+			[string](description) Desenvolver um algoritmo que faça recomendações de receitas com base nos ingredientes e medidas disponíveis, sugerindo ajustes para maximizar a eficiência.  
+			[list-start](related_topics)  
+				[string] Algoritmos de recomendação  
+				[string] Optimização linear  
+				[string] Programação dinâmica  
+			[list-end]  
+		[item-end]  
+		[item-start](task4)  
+			[string](name) Desenvolver base de dados para armazenar receitas e ingredientes  
+			[string](description) Criar uma estrutura de dados eficiente para armazenar as receitas, incluindo os ingredientes, medidas e instruções, permitindo a busca rápida e eficiente.  
+			[list-start](related_topics)  
+				[string] Banco de dados relacional  
+				[string] Armazenamento de dados em arquivo  
+				[string] Indexação de dados  
+			[list-end]  
+		[item-end]  
+		[item-start](task5)  
+			[string](name) Desenvolver sistema de prioridade e favoritismo para as receitas  
+			[string](description) Criar uma interface que permita aos usuários dar prioridade a certas receitas, criar favoris e realizar aquisições personalizadas.  
+			[list-start](related_topics)  
+				[string] Interfaces gráficas  
+				[string] Programação orientada a objetos  
+				[string] Algoritmos de busca linear  
+			[list-end]  
+		[item-end]  
+		[item-start](task6)  
+			[string](name) Implementar sistema de atualização automática das receitas e ingredientes  
+			[string](description) Desenvolver uma conexão que permita a atualização regular das receitas e ingredientes, garantindo que o aplicativo esteja sempre atualizado.  
+			[list-start](related_topics)  
+				[string] Conexões HTTP  
+				[string] Web scraping  
+				[string] Programação em segundo plano  
+			[list-end]  
+		[item-end]  
+		[item-start](task7)  
+			[string](name) Testar e depurar o aplicativo antes do lançamento final  
+			[string](description) Realizar testes de funcionalidade, usabilidade e estabilidade para garantir que o aplicativo esteja pronto para uso.  
+			[list-start](related_topics)  
+				[string] Testes unitários  
+				[string] Testes de integração  
+				[string] Debugging  
+			[list-end]  
+		[item-end]  
+	[list-end]  
 [item-end]
