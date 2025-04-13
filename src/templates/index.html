@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cricket AI</title>
+	<script src="https://unpkg.com/htmx.org@2.0.4"
+		integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+	<div class="bg-gray-800 text-white py-4">
+		<h1 class="text-center text-3xl font-bold">Cricket AI</h1>
+	</div>
+	<div class="flex justify-center items-center min-h-[90vh]">
+		<div class="w-full max-w-lg max-h-[80vh] p-4 flex flex-col" hx-post="/process"
+		hx-trigger="click from:button[type='submit']" hx-swap="outerHTML">
+			<div class="flex-grow overflow-y-auto">
+				<form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+					<label for="area" class="block text-gray-700 text-sm font-bold mb-2">Qual sua principal área de
+						interesse?
+						<span class="text-red-500">*</span>
+					</label>
+					<select id="area" name="area" required
+						class="w-full max-w-full p-3 border rounded bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+						<option value="" disabled selected hidden>Escolha uma opção</option>
+						<option value="web" class="whitespace-normal break-words">Desenvolvimento Web</option>
+						<option disabled style="font-style:italic">&nbsp;&nbsp;&nbsp;&nbsp;(...criação de sites,
+							plataformas online, APIs e mais)</option>
+						<option value="mobile" class="whitespace-normal break-words">Desenvolvimento de Aplicativos
+						</option>
+						<option disabled style="font-style:italic">&nbsp;&nbsp;&nbsp;&nbsp;(...criação de aplicativos
+							para Android e iOS)</option>
+						<option value="systems" class="whitespace-normal break-words">Desenvolvimento de Sistemas
+						</option>
+						<option disabled style="font-style:italic">&nbsp;&nbsp;&nbsp;&nbsp;(...criação de sistemas
+							desktop e automação de processos)</option>
+						<option value="doubt" class="whitespace-normal break-words">Ainda não sei</option>
+					</select>
+
+					<label for="topics" class="block text-gray-700 text-sm font-bold mb-2 mt-4">
+						Escreva seus principais tópicos de interesse:
+						<span class="text-red-500">*</span>
+					</label>
+					<textarea id="topics" name="topics"
+						placeholder="Ex.: gosto de aprender sobre o universo e como sistemas solares se formam (escreva de forma específica e detalhada)"
+						required class="w-full p-3 border rounded resize-none h-24 overflow-y-auto"
+						style="box-sizing: border-box;"></textarea>
+
+					<label for="problems" class="block text-gray-700 text-sm font-bold mb-2 mt-4">
+						Escreva sobre problemas do seu dia a dia:
+						<span class="text-red-500">*</span>
+					</label>
+					<textarea id="problems" name="problems"
+						placeholder="Ex.: ter que andar de ônibus para ir ao trabalho é muito intediante (escreva de forma específica e detalhada)"
+						required class="w-full p-3 border rounded resize-none h-24 overflow-y-auto"
+						style="box-sizing: border-box;"></textarea>
+
+					<label for="dreams" class="block text-gray-700 text-sm font-bold mb-2 mt-4">
+						Quais coisas você gostaria que existissem para você?
+						<span class="text-red-500">*</span>
+					</label>
+					<textarea id="dreams" name="dreams"
+						placeholder="(Pode ser um app, ferramenta, sistema, jogo ou qualquer coisa que melhoraria sua vida ou seria divertido de fazer)"
+						required class="w-full p-3 border rounded resize-none h-24 overflow-y-auto"
+						style="box-sizing: border-box;"></textarea>
+
+					<label for="time" class="block text-gray-700 text-sm font-bold mb-2 mt-4">
+						Quanto tempo você tem disponível por semana?
+						<span class="text-red-500">*</span>
+					</label>
+					<select id="time" name="time" required
+						class="w-full max-w-full p-3 border rounded bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+						<option value="" disabled selected hidden>Escolha uma opção</option>
+						<option value="lt_2">Menos de 2 horas</option>
+						<option value="bt_2-4">Entre 2 e 4 horas</option>
+						<option value="bt_5-7">Entre 5 e 7 horas</option>
+						<option value="mt_8">Mais de 8 horas</option>
+					</select>
+				</form>
+			</div>
+			<div class="bg-white shadow-md rounded px-8 py-4">
+				<button type="submit"
+					class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">
+					Submit
+				</button>
+			</div>
+		</div>
+	</div>
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const form = document.querySelector('form');
+			const submitButton = document.querySelector('button[type="submit"]');
+
+			const checkFormValidity = () => {
+				if (form.checkValidity()) {
+					submitButton.disabled = false;
+					submitButton.classList.remove('bg-gray-400', 'cursor-not-allowed');
+					submitButton.classList.add('bg-blue-500', 'hover:bg-blue-700');
+				} else {
+					submitButton.disabled = true;
+					submitButton.classList.remove('bg-blue-500', 'hover:bg-blue-700');
+					submitButton.classList.add('bg-gray-400', 'cursor-not-allowed');
+				}
+			};
+
+			form.addEventListener('input', checkFormValidity);
+
+			// Initial check on page load
+			checkFormValidity();
+		});
+	</script>
+</body>
+
+</html>
