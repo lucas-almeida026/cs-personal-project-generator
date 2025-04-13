@@ -16,10 +16,10 @@
 		<h1 class="text-center text-3xl font-bold">Cricket AI</h1>
 	</div>
 	<div class="flex justify-center items-center min-h-[90vh]">
-		<div class="w-full max-w-lg max-h-[80vh] p-4 flex flex-col" hx-post="/process"
-		hx-trigger="click from:button[type='submit']" hx-swap="outerHTML">
+		<div class="w-full max-w-lg max-h-[80vh] p-4 flex flex-col" id="form-container">
 			<div class="flex-grow overflow-y-auto">
-				<form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+				<form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" hx-post="/process"
+					hx-trigger="click from:button[type='submit']" hx-swap="outerHTML" hx-target="#form-container">
 					<label for="area" class="block text-gray-700 text-sm font-bold mb-2">Qual sua principal área de
 						interesse?
 						<span class="text-red-500">*</span>
@@ -84,8 +84,10 @@
 			</div>
 			<div class="bg-white shadow-md rounded px-8 py-4">
 				<button type="submit"
-					class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">
-					Submit
+					class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full"
+					hx-indicator="#loading-indicator" hx-disable>
+					<span id="button-text">Submit</span>
+					<span id="loading-indicator" class="hidden">Loading...</span>
 				</button>
 			</div>
 		</div>
