@@ -23,8 +23,8 @@ server.get('/info', (_, res) => {
 })
 
 server.post('/process', async (req,res) => {
-	const {  area, problems, dreams, time } = req.body
-	const response = await ollamaApi.generateSuggestion({ area, problems, dreams, time })
+	const {  area, topics, problems, dreams, time } = req.body
+	const response = await ollamaApi.generateSuggestion({ area, topics, problems, dreams, time })
 	if (!response || typeof response !== 'string') {
 		return res.status(500).send({
 			error: 'No response from model',

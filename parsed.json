@@ -1,68 +1,41 @@
 {
-  "name": "AutoChef",
-  "description": "Aplicativo desktop de automação de receitas, que pede os ingredientes e as instruções no site, para criar e gerenciar receitas personalizadas com base nos recursos disponíveis.",
+  "name": "MobilePuzzleSolved",
+  "description": "Aplicativo que ajuda os usuários a resolver problemas relacionados à produtividade, organização e motivação em ambientes acadêmicos.",
   "tasks": [
     {
-      "name": "Criar tela inicial com menu principal",
-      "description": "Desenvolver uma interface gráfica clara para apresentar as opções do aplicativo, incluindo a possibilidade de criar e gerenciar receitas.",
+      "name": "Criar tela de login com autenticação para o aplicativo",
+      "description": "Usar Firebase Authentication para criar uma tela de login funcional, com validação de e-mail e senha.",
       "related_topics": [
-        "Interface Gráfica",
-        "Menu principal",
-        "Programação orientada a objetos"
+        "Firebase Authentication",
+        "Validação de formulários",
+        "JSON Web Tokens"
       ]
     },
     {
-      "name": "Conectar ao site de receitas e ingredientes",
-      "description": "Desenvolver uma conexão segura com um servidor web para extrair as informações das receitas, ingredientes e medidas.",
+      "name": "Desenvolver sistema de busca por tarefas e objetivos",
+      "description": "Utilizar o framework SQLite para criar um banco local, onde os usuários possam criar e salvar suas tarefas e objetivos.",
       "related_topics": [
-        "Conexões HTTP",
-        "Web scraping",
-        "Segurança de dados"
-      ]
-    },
-    {
-      "name": "Criar sistema de receitas com base em recursos disponíveis",
-      "description": "Desenvolver um algoritmo que faça recomendações de receitas com base nos ingredientes e medidas disponíveis, sugerindo ajustes para maximizar a eficiência.",
-      "related_topics": [
-        "Algoritmos de recomendação",
-        "Optimização linear",
-        "Programação dinâmica"
-      ]
-    },
-    {
-      "name": "Desenvolver base de dados para armazenar receitas e ingredientes",
-      "description": "Criar uma estrutura de dados eficiente para armazenar as receitas, incluindo os ingredientes, medidas e instruções, permitindo a busca rápida e eficiente.",
-      "related_topics": [
-        "Banco de dados relacional",
-        "Armazenamento de dados em arquivo",
-        "Indexação de dados"
-      ]
-    },
-    {
-      "name": "Desenvolver sistema de prioridade e favoritismo para as receitas",
-      "description": "Criar uma interface que permita aos usuários dar prioridade a certas receitas, criar favoris e realizar aquisições personalizadas.",
-      "related_topics": [
-        "Interfaces gráficas",
-        "Programação orientada a objetos",
+        "SQLite",
+        "Manipulação de bases de dados em Android",
         "Algoritmos de busca linear"
       ]
     },
     {
-      "name": "Implementar sistema de atualização automática das receitas e ingredientes",
-      "description": "Desenvolver uma conexão que permita a atualização regular das receitas e ingredientes, garantindo que o aplicativo esteja sempre atualizado.",
+      "name": "Implementar sistema de notificações para tarefas e objetivos",
+      "description": "Utilizar o Firebase Cloud Messaging (FCM) para criar uma sistema de notificação que envie mensagens de alerta às tarefas e objetivos dos usuários.",
       "related_topics": [
-        "Conexões HTTP",
-        "Web scraping",
-        "Programação em segundo plano"
+        "Firebase Cloud Messaging (FCM)",
+        "Notificações em aplicativos Android",
+        "Programação assíncrona com Coroutines"
       ]
     },
     {
-      "name": "Testar e depurar o aplicativo antes do lançamento final",
-      "description": "Realizar testes de funcionalidade, usabilidade e estabilidade para garantir que o aplicativo esteja pronto para uso.",
+      "name": "Desenvolver sistema de motivação e recompensas",
+      "description": "Criar um sistema que recompense os usuários por completar tarefas e alcançar objetivos, utilizando uma API para sincronizar as informações com o Firebase.",
       "related_topics": [
-        "Testes unitários",
-        "Testes de integração",
-        "Debugging"
+        "Programação de recompensas",
+        "Algoritmos de otimização",
+        "Tratamento de dados JSON em Android"
       ]
     }
   ]

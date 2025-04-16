@@ -53,13 +53,13 @@ Sua missão é, com base nas respostas de um formulário:
 				[string] JSON Web Tokens  
 			[list-end]  
 		[item-end]  
-		...  
+		...(Mais 8 outras tarefas) 
 	[list-end]  
 [item-end]
 
 ### Diretrizes obrigatórias:
 
-- Gere **ao menos 8 tarefas**, todas granulares e voltadas à construção do projeto.
+- Gere **ao menos 9 tarefas**, todas granulares e voltadas à construção do projeto.
 - Não inclua tarefas genéricas como "teste", "debug", "refatoração", "melhorias", "deploy", "documentação", etc.
 - Foque em ações pequenas, claras e incrementais, como "Criar botão de login", "Salvar dados em banco local", "Validar campo de email".
 - Nunca escreva nenhum texto fora da estrutura especificada.
@@ -80,6 +80,7 @@ Sua missão é, com base nas respostas de um formulário:
 			temperature: 0.3,
 			prompt: prompt,
 		}
+		console.log(body)
 		try {
 			const response = await ollamaClient.post('/?path=/api/generate', body)
 			const data = response.data

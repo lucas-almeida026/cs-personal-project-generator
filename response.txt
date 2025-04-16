@@ -1,69 +1,43 @@
 [item-start](project)  
-	[string](name) AutoChef  
-	[string](description) Aplicativo desktop de automação de receitas, que pede os ingredientes e as instruções no site, para criar e gerenciar receitas personalizadas com base nos recursos disponíveis.  
+	[string](name) MobilePuzzleSolved  
+	[string](description) Aplicativo que ajuda os usuários a resolver problemas relacionados à produtividade, organização e motivação em ambientes acadêmicos.  
 	[list-start](tasks)  
 		[item-start](task1)  
-			[string](name) Criar tela inicial com menu principal  
-			[string](description) Desenvolver uma interface gráfica clara para apresentar as opções do aplicativo, incluindo a possibilidade de criar e gerenciar receitas.  
+			[string](name) Criar tela de login com autenticação para o aplicativo  
+			[string](description) Usar Firebase Authentication para criar uma tela de login funcional, com validação de e-mail e senha.  
 			[list-start](related_topics)  
-				[string] Interface Gráfica 
-				[string] Menu principal  
-				[string] Programação orientada a objetos  
+				[string] Firebase Authentication  
+				[string] Validação de formulários  
+				[string] JSON Web Tokens  
 			[list-end]  
 		[item-end]  
 		[item-start](task2)  
-			[string](name) Conectar ao site de receitas e ingredientes  
-			[string](description) Desenvolver uma conexão segura com um servidor web para extrair as informações das receitas, ingredientes e medidas.  
+			[string](name) Desenvolver sistema de busca por tarefas e objetivos  
+			[string](description) Utilizar o framework SQLite para criar um banco local, onde os usuários possam criar e salvar suas tarefas e objetivos.  
 			[list-start](related_topics)  
-				[string] Conexões HTTP  
-				[string] Web scraping  
-				[string] Segurança de dados  
-			[list-end]  
-		[item-end]  
-		[item-start](task3)  
-			[string](name) Criar sistema de receitas com base em recursos disponíveis  
-			[string](description) Desenvolver um algoritmo que faça recomendações de receitas com base nos ingredientes e medidas disponíveis, sugerindo ajustes para maximizar a eficiência.  
-			[list-start](related_topics)  
-				[string] Algoritmos de recomendação  
-				[string] Optimização linear  
-				[string] Programação dinâmica  
-			[list-end]  
-		[item-end]  
-		[item-start](task4)  
-			[string](name) Desenvolver base de dados para armazenar receitas e ingredientes  
-			[string](description) Criar uma estrutura de dados eficiente para armazenar as receitas, incluindo os ingredientes, medidas e instruções, permitindo a busca rápida e eficiente.  
-			[list-start](related_topics)  
-				[string] Banco de dados relacional  
-				[string] Armazenamento de dados em arquivo  
-				[string] Indexação de dados  
-			[list-end]  
-		[item-end]  
-		[item-start](task5)  
-			[string](name) Desenvolver sistema de prioridade e favoritismo para as receitas  
-			[string](description) Criar uma interface que permita aos usuários dar prioridade a certas receitas, criar favoris e realizar aquisições personalizadas.  
-			[list-start](related_topics)  
-				[string] Interfaces gráficas  
-				[string] Programação orientada a objetos  
+				[string] SQLite  
+				[string] Manipulação de bases de dados em Android  
 				[string] Algoritmos de busca linear  
 			[list-end]  
 		[item-end]  
-		[item-start](task6)  
-			[string](name) Implementar sistema de atualização automática das receitas e ingredientes  
-			[string](description) Desenvolver uma conexão que permita a atualização regular das receitas e ingredientes, garantindo que o aplicativo esteja sempre atualizado.  
+		[item-start](task3)  
+			[string](name) Implementar sistema de notificações para tarefas e objetivos  
+			[string](description) Utilizar o Firebase Cloud Messaging (FCM) para criar uma sistema de notificação que envie mensagens de alerta às tarefas e objetivos dos usuários.  
 			[list-start](related_topics)  
-				[string] Conexões HTTP  
-				[string] Web scraping  
-				[string] Programação em segundo plano  
+				[string] Firebase Cloud Messaging (FCM)  
+				[string] Notificações em aplicativos Android  
+				[string] Programação assíncrona com Coroutines  
 			[list-end]  
 		[item-end]  
-		[item-start](task7)  
-			[string](name) Testar e depurar o aplicativo antes do lançamento final  
-			[string](description) Realizar testes de funcionalidade, usabilidade e estabilidade para garantir que o aplicativo esteja pronto para uso.  
+		[item-start](task4)  
+			[string](name) Desenvolver sistema de motivação e recompensas  
+			[string](description) Criar um sistema que recompense os usuários por completar tarefas e alcançar objetivos, utilizando uma API para sincronizar as informações com o Firebase.  
 			[list-start](related_topics)  
-				[string] Testes unitários  
-				[string] Testes de integração  
-				[string] Debugging  
+				[string] Programação de recompensas  
+				[string] Algoritmos de otimização  
+				[string] Tratamento de dados JSON em Android  
 			[list-end]  
 		[item-end]  
-	[list-end]  
+		...(Mais 5 outras tarefas) 
+		list-end  
 [item-end]
