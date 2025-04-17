@@ -148,7 +148,6 @@ Continue seu bom trabalho e reescreava a frase a seguir: `,
 				if (!modelResponse || typeof modelResponse !== 'string') {
 					throw new Error('No response from model')
 				}
-				console.log({ modelResponse })
 				return modelResponse
 					.split('\n')
 					.map(line => line.includes('>')
