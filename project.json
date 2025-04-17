@@ -1,121 +1,121 @@
 {
-  "name": "LinguaJogo",
-  "description": "Aplicativo que combina jogabilidade com aprendizado do inglês, visando resolver o problema de ler livros em uma linguagem desconhecida.",
+  "name": "Ludoteca",
+  "description": "Uma plataforma web para encontrar e jogar video games com amigos, facilitando o acesso a jogos clássicos e permitindo a aprendizagem de inglês por meio do conteúdo dos jogos.",
   "epics": [
     {
-      "original": "Autenticação e Cadastro",
-      "summarized": "Autenticação",
-      "tasks": {
-        "tasks": [
-          "Criar tela de cadastro de usuários",
-          "Validar campos obrigatórios no cadastro (nome, email e senha)",
-          "Enviar email de confirmação após cadastro com código de verificação",
-          "Criar tela de login dos usuários",
-          "Realizar autenticação do usuário ao digitar nome e senha",
-          "Proteger acesso as outras telas que exigem login autenticado",
-          "Implementar recuperação de senha usando email",
-          "Permitir o usuário alterar a sua senha",
-          "Validar e restringir caracteres da senha",
-          "Exibir mensagem de sucesso após cadastro e login com informações do usuário"
-        ]
-      }
+      "original": "Registre seus jogos",
+      "summarized": "Controle",
+      "tasks": [
+        "Criar campo para registro de título do jogo",
+        "Adicionar campo para registro da plataforma (console, PC, etc.)",
+        "Desenvolver busca por títulos de jogos",
+        "Implementar filtro por plataforma e gênero",
+        "Criar botão para adicionar novo jogo à lista",
+        "Permitir edição das informações do jogo registrados",
+        "Exibir lista de jogos registrados pelo usuário",
+        "Implementar remoção de jogos da lista",
+        "Adicionar campo para nota ou avaliação do jogo",
+        "Desenvolver visualização detalhada de cada jogo registrado",
+        "Ordenar e personalizar a listagem de jogos registrados"
+      ]
     },
     {
-      "original": "Banco de Palavras Inglesas",
-      "summarized": "Linguagem",
-      "tasks": {
-        "tasks": [
-          "Criar tabela para armazenamento das palavras inglesas",
-          "Implementar cadastro de novas palavras no sistema",
-          "Fazer consulta por palavra existente no banco",
-          "Cadastrar exemplo de uso de cada palavra",
-          "Armazenar tradução portuguesa da palavra",
-          "Criar função para buscar sinônimos de uma palavra",
-          "Implementar cadastro de expressões idiomáticas em inglês",
-          "Fazer consulta por expressão existente no banco",
-          "Cadastrar exemplo de uso de cada expressão",
-          "Armazenar tradução portuguesa da expressão",
-          "Criar função para buscar expressões associadas a uma palavra"
-        ]
-      }
+      "original": "Batalha Online",
+      "summarized": "Competição",
+      "tasks": [
+        "Criar página para criar partidas de batalha online",
+        "Implementar sistema de matchmaking para parar jogadores com habilidades similares",
+        "Desenvolver tela de preparação da partida, incluindo escolha de personagem e configuração de opções",
+        "Criar tela de visualização do jogo em andamento",
+        "Implementar sistema de pontuação e ranking dos jogadores",
+        "Adicionar recurso de chat para comunicação entre jogadores",
+        "Desenvolver tela de resultado da partida, incluindo informações sobre o vencedor e estatísticas",
+        "Criar página para visualizar histórico das partidas jogadas",
+        "Implementar sistema de notificação para os jogadores sobre novas partidas disponíveis",
+        "Desenvolver tela de configuração de partida, incluindo opções de duração e regras customizáveis"
+      ]
     },
     {
-      "original": "Conversão de Texto para Tarefas do Jogo",
-      "summarized": "Geração",
-      "tasks": {
-        "tasks": [
-          "Criar conversor de texto para formato do jogo",
-          "Implementar reconhecimento de palavras em português",
-          "Dividir texto em frases e palavras individuais",
-          "Adicionar suporte a números e símbolos",
-          "Conectar conversor ao banco de dados do jogo",
-          "Criar rotina para atualizar vocabulário do jogo",
-          "Implementar controle de velocidade da leitura do texto",
-          "Adicionar opção de pausa na leitura do texto",
-          "Criar relatório de desempenho do usuário no processo de leitura",
-          "Integrar conversor com sistema de pontuação do jogo"
-        ]
-      }
+      "original": "Chat em tempo real",
+      "summarized": "Comunicação",
+      "tasks": [
+        "Criar tela de conversa para os usuários conectados",
+        "Desenvolver funcionalidade de envio de mensagens em tempo real",
+        "Implementar sistema de notificações para novas mensagens",
+        "Adicionar opção de criar grupos de conversa",
+        "Habilitar troca de arquivos entre usuários",
+        "Implementar busca por usuário no chat",
+        "Criar opção de enviar arquivo em formato de texto",
+        "Desenvolver funcionalidade de envio de links para jogos",
+        "Adicionar botões de emojis e stickers ao chat",
+        "Implementar sistema de administração para moderação do chat",
+        "Testar integração com banco de dados para armazenamento de mensagens"
+      ]
     },
     {
-      "original": "Sistema de Pontuação e Progresso",
-      "summarized": "Progresso",
-      "tasks": {
-        "tasks": [
-          "Criar sistema de pontuação para cada nível de desafio",
-          "Desenvolver progressão de desafios ao longo da aprendizagem do usuário",
-          "Criar leilão de prêmios e bônus para recompensar o esforço dos usuários",
-          "Implementar sistema de contagem de pontos por atividade realizada com sucesso",
-          "Desenvolver histórico de progresso do usuário em cada nível de desafio",
-          "Criar sistema de notificação para quando o usuário completar uma etapa ou atingir um patamar de progresso",
-          "Melhorar experiência ao visualizar pontuação e progresso em dashboard do aplicativo",
-          "Implementar sistema de recompensa automática por marcar hitos significativos no aprendizado",
-          "Criar filtro para que o usuário possa ver apenas os desafios mais importantes para seu nível de habilidade"
-        ]
-      }
-    },
-    {
-      "original": "Interface de Usuário Interativa com Jogabilidade",
-      "summarized": "Jogabilidade",
-      "tasks": {
-        "undefined": "Desenvolver sistema de notificações para alertar sobre novos desafios ou atualizações"
-      }
-    },
-    {
-      "original": "Tradução em Tempo Real de Frases e Contextos",
+      "original": "Tradução automática",
       "summarized": "Tradutor",
-      "tasks": {
-        "tasks": [
-          "Criar página de tradução com campo para digitar frases",
-          "Conectar API de tradução para obter resultados precisos",
-          "Mostrar resultado da tradução na mesma tela, destacando a palavra em inglês",
-          "Permitir usuário copiar texto traduzido",
-          "Criar opção para trocar idioma entre português e inglês",
-          "Adicionar botão de \"ouvir\" para frases traduzidas com sintese de voz",
-          "Implementar ajuste do tamanho da janela do tradutor",
-          "Permitir usuário salvar frase original em lista de favoritos",
-          "Criar opção para ver definições das palavras traduzidas, conectando à API Lexicon",
-          "Adicionar recurso de \"pronunciar palavra\", com letra e sílaba destacadas"
-        ]
-      }
+      "tasks": [
+        "Implementar API de tradução automática para inglês e outras línguas",
+        "Fazer a integração da API com o sistema de texto a ser traduzido",
+        "Criar interface para usuário inserir texto a ser traduzido",
+        "Exibir resultado da tradução na tela do usuário",
+        "Validar se o usuário tem permissão para acessar a funcionalidade de tradução",
+        "Adicionar opção de escolher qual língua será traduzida",
+        "Ajustar layout da página para melhorar a experiência do usuário ao usar a tradução",
+        "Realizar testes e ajustes necessários no funcionamento da tradução",
+        "Implementar sistema de cache para melhorar desempenho da tradução",
+        "Adicionar informações sobre fonte da tradução para resolução de problemas",
+        "Documentar API de tradução automática utilizada"
+      ]
     },
     {
-      "original": "Avaliação de Conhecimento por Níveis de Desafio",
-      "summarized": "Desafio",
-      "tasks": {
-        "tasks": [
-          "Criar sistema de níveis de desafio (fácil, médio e difícil)",
-          "Desenvolver perguntas aleatórias com respostas para cada nível de desafio",
-          "Implementar lógica de avaliação de resposta correta ou incorreta",
-          "Criar sistema de pontuação que avance o usuário no nível de desafio",
-          "Desenvolver regras de progressão (avançar para o próximo nível)",
-          "Implementar feedback visual e auditivo para resultados das respostas",
-          "Adicionar opção de revisão de questões respondidas corretamente ou incorretamente",
-          "Integrar sistema de desafio com a lista de perguntas",
-          "Desenvolver funcionalidade para carregar mais perguntas ao serem necessárias",
-          "Implementar ajuste de dificuldade individual para cada usuário baseado no seu histórico"
-        ]
-      }
+      "original": "Notificações de amigos online",
+      "summarized": "Amigos",
+      "tasks": [
+        "Criar tela de perfil para cada usuário mostrar seus jogos favoritos e amigos online",
+        "Implementar sistema de busca por amigos com nome ou ID do usuário",
+        "Adicionar botão \"Conectar\" na página do amigo para iniciar jogo em conjunto",
+        "Criar notificação visual quando um amigo entra ou sai no jogo",
+        "Enviar notificações push para dispositivos móveis quando um amigo tenta conectar para jogar",
+        "Permitir que os usuários enviem mensagens de texto para amigos online",
+        "Adicionar opção para bloquear ou desbloquear um amigo",
+        "Criar feed de notificações visível no topo da página, destacando novas mensagens ou jogos iniciados por amigos",
+        "Implementar recurso para ver histórico de jogos iniciados com cada amigo",
+        "Adicionar opção para ver lista de jogos favoritos do amigo e sugerir jogos semelhantes"
+      ]
+    },
+    {
+      "original": "Ranking de desempenho",
+      "summarized": "Desempenho",
+      "tasks": [
+        "Criar tabela para armazenamento do ranking de jogos",
+        "Implementar lógica para calcular a pontuação dos usuários",
+        "Adicionar opção para filtragem de resultados por jogo ou usuário",
+        "Exibir informações sobre o usuário na página do ranking",
+        "Criar sistema de paginamento para visualização dos resultados",
+        "Permitir que os usuários vejam seus próprios resultados no ranking",
+        "Implementar sorteio e premiação para os jogadores mais bem posicionados",
+        "Realizar validação das informações do usuário antes de inclusão no ranking",
+        "Criar página para visualização dos detalhes da liderança (usuário, tempo de jogo, etc.)",
+        "Adicionar sistema de alerta para anúncio do término da temporada e início da próxima"
+      ]
+    },
+    {
+      "original": "Biblioteca de Jogos Clássicos",
+      "summarized": "Biblioteca",
+      "tasks": [
+        "Criar tabela para armazenamento de games clássicos",
+        "Fazer upload de jogos clássicos em forma de imagens",
+        "Implementar busca por título de jogo ou gênero",
+        "Criar lista de favoritos para os usuários",
+        "Exibir descrição e características dos jogos",
+        "Adicionar opção de filtragem por plataforma",
+        "Inserir campo de pesquisa por nome do jogador no jogo",
+        "Implementar paginação na listagem de jogos",
+        "Criar link para página de detalhes sobre cada jogo",
+        "Exibir vídeos demonstrativos dos jogos clássicos"
+      ]
     }
   ]
 }

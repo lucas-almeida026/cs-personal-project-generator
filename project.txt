@@ -1,13 +1,13 @@
 [item-start](project)  
-	[string](name) LinguaJogo  
-	[string](description) Aplicativo que combina jogabilidade com aprendizado do inglês, visando resolver o problema de ler livros em uma linguagem desconhecida.
+	[string](name) Ludoteca  
+	[string](description) Uma plataforma web para encontrar e jogar video games com amigos, facilitando o acesso a jogos clássicos e permitindo a aprendizagem de inglês por meio do conteúdo dos jogos.
 	[list-start](epics)  
-		[string] Autenticação e Cadastro
-		[string] Banco de Palavras Inglesas
-		[string] Conversão de Texto para Tarefas do Jogo
-		[string] Sistema de Pontuação e Progresso
-		[string] Interface de Usuário Interativa com Jogabilidade
-		[string] Tradução em Tempo Real de Frases e Contextos
-		[string] Avaliação de Conhecimento por Níveis de Desafio
+		[string] Registre seus jogos
+		[string] Batalha Online
+		[string] Chat em tempo real
+		[string] Tradução automática
+		[string] Notificações de amigos online
+		[string] Ranking de desempenho
+		[string] Biblioteca de Jogos Clássicos
 	[list-end]
 [item-end]

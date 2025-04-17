@@ -32,8 +32,8 @@ server.post('/process', async (req, res) => {
 		})
 	}
 	fs.writeFileSync('./project.txt', response, 'utf-8')
+	let { name, description, epics } = parseCustomFormat(response)
 	try {
-		let { name, description, epics } = parseCustomFormat(response)
 		const cleanEpics = await ollamaApi.epicShrinker.generate(epics ?? [])
 		epics = cleanEpics
 
@@ -73,7 +73,13 @@ server.post('/process', async (req, res) => {
 	// 		</div>`).join('')}
 	// </div>
 	// </div>`
-	res.send('<p>ok</p>')
+	res.send(`
+		<div style="max-width: 1080px; margin: 0 auto; padding: 16px; overflow-x: auto;">
+			<pre style="white-space: pre-wrap; word-wrap: break-word;">
+				<code class="language-json">${JSON.stringify({ name, description, epics }, null, 2)}</code>
+			</pre>
+		</div>
+	`)
 })
 
 server.post('/ollama', async (req, res) => {
