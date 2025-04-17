@@ -1,0 +1,13 @@
+[item-start](project)  
+	[string](name) LexiBook  
+	[string](description) Desenvolver um aplicativo web que ajuda na leitura de livros, proporcionando experiência mais agradável e produtiva. 
+	[list-start](epics)  
+		[string] Inicialização do Sistema
+		[string] Gerenciamento de Contas
+		[string] Catálogo de Livros
+		[string] Leituras marcadas e progresso
+		[string] Avaliações e Comentários
+		[string] Recomendação Personalizada
+		[string] Configurações de Usuário
+	[list-end]
+[item-end]

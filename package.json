@@ -2,9 +2,9 @@
   "name": "cs-personal-project-generator",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "test": "vitest",
-    "dev": "nodemon ./src/server.mjs"
+"scripts": {
+	"test": "vitest",
+	"dev": "nodemon --watch src --exec node ./src/server.mjs"
   },
   "keywords": [],
   "author": "",

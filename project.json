@@ -1,0 +1,34 @@
+{
+  "name": "LexiBook",
+  "description": "Desenvolver um aplicativo web que ajuda na leitura de livros, proporcionando experiência mais agradável e produtiva.",
+  "epics": [
+    {
+      "original": "Inicialização do Sistema",
+      "summarized": "Inicialização"
+    },
+    {
+      "original": "Gerenciamento de Contas",
+      "summarized": "Autenticação"
+    },
+    {
+      "original": "Catálogo de Livros",
+      "summarized": "Biblioteca"
+    },
+    {
+      "original": "Leituras marcadas e progresso",
+      "summarized": "Progresso"
+    },
+    {
+      "original": "Avaliações e Comentários",
+      "summarized": "Avaliação"
+    },
+    {
+      "original": "Recomendação Personalizada",
+      "summarized": "Recomendação"
+    },
+    {
+      "original": "Configurações de Usuário",
+      "summarized": "Configuração"
+    }
+  ]
+}

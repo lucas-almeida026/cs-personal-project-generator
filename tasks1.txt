@@ -1,0 +1,15 @@
+[item-start](epic)  
+	[string](name) Inicialização  
+	[list-start](tasks)  
+		[string] Criar página inicial do LexiBook  
+		[string] Implementar menu de navegação com opções de livro e perfil  
+		[string] Adicionar seção para exibir bem-vindo ao usuário  
+		[string] Fazer conexão com banco de dados de usuários  
+		[string] Criar tabela para armazenamento das informações dos livros  
+		[string] Implementar autenticação básica (login e cadastro)  
+		[string] Validar dados do formulário de cadastro  
+		[string] Exibir erro de caso de login inválido  
+		[string] Realizar inicialização da biblioteca para leitura de livro  
+		[string] Adicionar opção de escolha entre diferentes formatos de texto (letra, cor de fundo, etc.)  
+	[list-end]  
+[item-end]

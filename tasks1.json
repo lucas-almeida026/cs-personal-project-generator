@@ -1,0 +1,15 @@
+{
+  "name": "Inicialização",
+  "tasks": [
+    "Criar página inicial do LexiBook",
+    "Implementar menu de navegação com opções de livro e perfil",
+    "Adicionar seção para exibir bem-vindo ao usuário",
+    "Fazer conexão com banco de dados de usuários",
+    "Criar tabela para armazenamento das informações dos livros",
+    "Implementar autenticação básica (login e cadastro)",
+    "Validar dados do formulário de cadastro",
+    "Exibir erro de caso de login inválido",
+    "Realizar inicialização da biblioteca para leitura de livro",
+    "Adicionar opção de escolha entre diferentes formatos de texto (letra, cor de fundo, etc.)"
+  ]
+}
