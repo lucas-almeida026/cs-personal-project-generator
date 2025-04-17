@@ -33,24 +33,28 @@ server.post('/process', async (req, res) => {
 	}
 	fs.writeFileSync('./project.txt', response, 'utf-8')
 	try {
-		let {name, description, epics} = parseCustomFormat(response)
+		let { name, description, epics } = parseCustomFormat(response)
 		const cleanEpics = await ollamaApi.epicShrinker.generate(epics ?? [])
 		epics = cleanEpics
-		fs.writeFileSync('./project.json', JSON.stringify({name, description, epics}, null, 2), 'utf-8')
 
-		console.log({cleanEpics})
-		const firstepic = epics?.[0]
-		if (!firstepic || !('original' in firstepic) || !('summarized' in firstepic)) {
-			throw new Error('No epics found')
+		for (let i = 0; i < epics.length; i++) {
+			const epic = epics[i]
+			if (!epic || !('original' in epic) || !('summarized' in epic)) {
+				throw new Error('No epics found')
+			}
+
+			let contextualEpic = epic.summarized
+			if (contextualEpic !== epic.original) {
+				contextualEpic += ` (${epic.original})`
+			}
+
+			const tasksResponse = await ollamaApi.taskGenerator.generate({ name, description, epic: contextualEpic })
+			
+			const { tasks } = parseCustomFormat(tasksResponse)
+			epic.tasks = tasks
 		}
-		let contextualEpic = firstepic.summarized
-		if (contextualEpic !== firstepic.original) {
-			contextualEpic += ` (${firstepic.original})`
-		}
-		const firstEpicTasks = await ollamaApi.taskGenerator.generate({ name, description, epic: contextualEpic })
-		fs.writeFileSync('./tasks1.txt', firstEpicTasks, 'utf-8')
-		const tasks = parseCustomFormat(firstEpicTasks)
-		fs.writeFileSync('./tasks1.json', JSON.stringify(tasks, null, 2), 'utf-8')
+
+		fs.writeFileSync('./project.json', JSON.stringify({ name, description, epics }, null, 2), 'utf-8')
 	} catch (e) {
 		console.error('Error:', e)
 	}
@@ -75,7 +79,7 @@ server.post('/process', async (req, res) => {
 server.post('/ollama', async (req, res) => {
 	const path = req.query.path || '/';
 	const tag = req.query.tag || 'unknown';
-	const {system, prompt} = req.body;
+	const { system, prompt } = req.body;
 
 	const logEntry = {
 		timestamp: new Date(),
