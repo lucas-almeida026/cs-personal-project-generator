@@ -58,28 +58,46 @@ server.post('/process', async (req, res) => {
 	} catch (e) {
 		console.error('Error:', e)
 	}
-	// const html = `<div class="container mx-auto p-4">
-	// <h1 class="text-2xl font-bold">${name}</h1>
-	// <h3 class="text-slate-700">${description}</h3><br/>
-	// <h4 class="text-lg font-bold">Tasks:</h4>
-	// <div class="grid grid-cols-1 gap-4">
-	// 	${tasks?.map(task => `
-	// 		<div class="border border-gray-300 rounded-md p-4">
-	// 			<h5 class="text-md font-semibold ">${task?.name}</h5>
-	// 			<p class="text-slate-700 text-sm">${task?.description}</p>
-	// 			<ul class="list-disc ml-5">
-	// 				${task?.related_topics?.map(topic => `<li class="text-slate-700">${topic}</li>`).join('')}
-	// 			</ul>
-	// 		</div>`).join('')}
-	// </div>
-	// </div>`
-	res.send(`
-		<div style="max-width: 1080px; margin: 0 auto; padding: 16px; overflow-x: auto;">
-			<pre style="white-space: pre-wrap; word-wrap: break-word;">
-				<code class="language-json">${JSON.stringify({ name, description, epics }, null, 2)}</code>
-			</pre>
-		</div>
-	`)
+	const flatTasks = []
+	for (const epic of (epics ?? [])) {
+		for (const task of epic.tasks) {
+			flatTasks.push({
+				name: task,
+				epic: epic?.summarized
+			})
+		}
+	}
+	const html = `<div class="container mx-auto p-4">
+	<h1 class="text-2xl font-bold">${name}</h1>
+	<h3 class="text-slate-700">${description}</h3><br/>
+	<h4 class="text-lg font-bold">Tasks:</h4><br/>
+	<div class="grid grid-cols-1 gap-4">
+		${flatTasks.map(({ name, epic }) => `
+			<div class="max-w-sm min-h-[116px] p-4
+				flex flex-col justify-between items-start
+				border border-gray-300 rounded-md shadow-md">
+				<h5 class="text-md font-semibold line-clamp-2">${name}</h5>
+				<span class="inline-block bg-purple-200 text-purple-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">${epic}</span>
+			</div>
+		`).join('')}
+	</div>
+</div>`
+	// ${tasks?.map(task => `
+	// 	<div class="border border-gray-300 rounded-md p-4">
+	// 		<h5 class="text-md font-semibold ">${task?.name}</h5>
+	// 		<p class="text-slate-700 text-sm">${task?.description}</p>
+	// 		<ul class="list-disc ml-5">
+	// 			${task?.related_topics?.map(topic => `<li class="text-slate-700">${topic}</li>`).join('')}
+	// 		</ul>
+	// 	</div>`).join('')}
+	// res.send(`
+	// 	<div style="max-width: 1080px; margin: 0 auto; padding: 16px; overflow-x: auto;">
+	// 		<pre style="white-space: pre-wrap; word-wrap: break-word;">
+	// 			<code class="language-json">${JSON.stringify({ name, description, epics }, null, 2)}</code>
+	// 		</pre>
+	// 	</div>
+	// `)
+	return res.send(html)
 })
 
 server.post('/ollama', async (req, res) => {

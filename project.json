@@ -1,120 +1,101 @@
 {
-  "name": "Ludoteca",
-  "description": "Uma plataforma web para encontrar e jogar video games com amigos, facilitando o acesso a jogos clássicos e permitindo a aprendizagem de inglês por meio do conteúdo dos jogos.",
+  "name": "Vida no Controle",
+  "description": "Aprenda a gerenciar sua rotina e diminuir estresse com automação e organização, desde o transporte até os estudos.",
   "epics": [
     {
-      "original": "Registre seus jogos",
-      "summarized": "Controle",
+      "original": "Automação de transporte (onibus)",
+      "summarized": "Rota",
       "tasks": [
-        "Criar campo para registro de título do jogo",
-        "Adicionar campo para registro da plataforma (console, PC, etc.)",
-        "Desenvolver busca por títulos de jogos",
-        "Implementar filtro por plataforma e gênero",
-        "Criar botão para adicionar novo jogo à lista",
-        "Permitir edição das informações do jogo registrados",
-        "Exibir lista de jogos registrados pelo usuário",
-        "Implementar remoção de jogos da lista",
-        "Adicionar campo para nota ou avaliação do jogo",
-        "Desenvolver visualização detalhada de cada jogo registrado",
-        "Ordenar e personalizar a listagem de jogos registrados"
+        "Criar API para buscar horários de onibus em tempo real",
+        "Implementar filtro de horários por data e hora",
+        "Exibir itinerário de transporte (onibus + intervalo entre eles)",
+        "Adicionar alerta para falta de transporte no dia",
+        "Criar rota de onibus mais eficiente com menor tempo de viagem",
+        "Calcular tempo estimado de chegada ao destino",
+        "Integrar com mapa para exibir rotas e pontos de interesse",
+        "Implementar recurso de compartilhamento da rota",
+        "Exibir histórico de rotas anteriormente usadas",
+        "Permitir editação das rotas favoritas"
       ]
     },
     {
-      "original": "Batalha Online",
-      "summarized": "Competição",
+      "original": "Agendamento de tarefas",
+      "summarized": "Agenda",
       "tasks": [
-        "Criar página para criar partidas de batalha online",
-        "Implementar sistema de matchmaking para parar jogadores com habilidades similares",
-        "Desenvolver tela de preparação da partida, incluindo escolha de personagem e configuração de opções",
-        "Criar tela de visualização do jogo em andamento",
-        "Implementar sistema de pontuação e ranking dos jogadores",
-        "Adicionar recurso de chat para comunicação entre jogadores",
-        "Desenvolver tela de resultado da partida, incluindo informações sobre o vencedor e estatísticas",
-        "Criar página para visualizar histórico das partidas jogadas",
-        "Implementar sistema de notificação para os jogadores sobre novas partidas disponíveis",
-        "Desenvolver tela de configuração de partida, incluindo opções de duração e regras customizáveis"
+        "Criar tarefa com descrição e data limite",
+        "Adicionar opção para repetição diária/semanal/mensal",
+        "Implementar remoção de tarefas concluídas",
+        "Fazer listagem das próximas tarefas agendadas",
+        "Agendar eventos não relembrados (alarme)",
+        "Criar evento de lembrete para tarefa em prazo",
+        "Permite adicionar anotação à tarefa",
+        "Fazer listagem das tarefas concluídas",
+        "Listar as próximas ações agendadas",
+        "Agendar eventos de relembramento"
       ]
     },
     {
-      "original": "Chat em tempo real",
-      "summarized": "Comunicação",
+      "original": "Controle de estudo",
+      "summarized": "Estudo",
       "tasks": [
-        "Criar tela de conversa para os usuários conectados",
-        "Desenvolver funcionalidade de envio de mensagens em tempo real",
-        "Implementar sistema de notificações para novas mensagens",
-        "Adicionar opção de criar grupos de conversa",
-        "Habilitar troca de arquivos entre usuários",
-        "Implementar busca por usuário no chat",
-        "Criar opção de enviar arquivo em formato de texto",
-        "Desenvolver funcionalidade de envio de links para jogos",
-        "Adicionar botões de emojis e stickers ao chat",
-        "Implementar sistema de administração para moderação do chat",
-        "Testar integração com banco de dados para armazenamento de mensagens"
+        "Criar página para adicionar disciplinas e turmas",
+        "Implementar calendário de estudos com data e hora marcadas",
+        "Fazer cadastro de tarefas de estudo por disciplina",
+        "Listar atividades de estudo pendentes para o dia",
+        "Permite adicionar notas e observações sobre cada tarefa",
+        "Envio de lembretes por email ou push notification sobre proximos estudos",
+        "Fazer busca e filtragem das disciplinas criadas",
+        "Controle de tempo de estudo para cada disciplina",
+        "Criar dashboard personalizável com gráficos e informações de produtividade",
+        "Recomendação de rotinas de estudos baseado no historico da pessoa"
       ]
     },
     {
-      "original": "Tradução automática",
-      "summarized": "Tradutor",
+      "original": "Integração com calendário pessoal",
+      "summarized": "Calendário",
       "tasks": [
-        "Implementar API de tradução automática para inglês e outras línguas",
-        "Fazer a integração da API com o sistema de texto a ser traduzido",
-        "Criar interface para usuário inserir texto a ser traduzido",
-        "Exibir resultado da tradução na tela do usuário",
-        "Validar se o usuário tem permissão para acessar a funcionalidade de tradução",
-        "Adicionar opção de escolher qual língua será traduzida",
-        "Ajustar layout da página para melhorar a experiência do usuário ao usar a tradução",
-        "Realizar testes e ajustes necessários no funcionamento da tradução",
-        "Implementar sistema de cache para melhorar desempenho da tradução",
-        "Adicionar informações sobre fonte da tradução para resolução de problemas",
-        "Documentar API de tradução automática utilizada"
+        "Criar tela de visualização do calendário",
+        "Integrar com calendários externos como Google Calendar",
+        "Adicionar eventos repetitivos (aniversários, meetings, etc.)",
+        "Implementar notificações para eventos próximos",
+        "Permitir criação de eventos recorrentes",
+        "Exibir evento atual e proximos eventos no topo da tela",
+        "Criar opção de exportação de calendário em formato CSV ou iCal",
+        "Adicionar opção de compartilhamento do calendário com outros usuários",
+        "Implementar busca por eventos pelo nome, data ou descrição",
+        "Exibir estatísticas sobre uso e produtividade do usuário"
       ]
     },
     {
-      "original": "Notificações de amigos online",
-      "summarized": "Amigos",
+      "original": "Notificação e feedback",
+      "summarized": "Feedback",
       "tasks": [
-        "Criar tela de perfil para cada usuário mostrar seus jogos favoritos e amigos online",
-        "Implementar sistema de busca por amigos com nome ou ID do usuário",
-        "Adicionar botão \"Conectar\" na página do amigo para iniciar jogo em conjunto",
-        "Criar notificação visual quando um amigo entra ou sai no jogo",
-        "Enviar notificações push para dispositivos móveis quando um amigo tenta conectar para jogar",
-        "Permitir que os usuários enviem mensagens de texto para amigos online",
-        "Adicionar opção para bloquear ou desbloquear um amigo",
-        "Criar feed de notificações visível no topo da página, destacando novas mensagens ou jogos iniciados por amigos",
-        "Implementar recurso para ver histórico de jogos iniciados com cada amigo",
-        "Adicionar opção para ver lista de jogos favoritos do amigo e sugerir jogos semelhantes"
+        "Criar notificação de novas tarefas pendentes",
+        "Implementar sistema de feedback por email",
+        "Adicionar recurso para marcar tarefas como concluídas",
+        "Fazer notificação para reabertura de tarefa pendente",
+        "Criar opção de configurar frequência das notificações",
+        "Implementar feedback por mensagens push no aplicativo",
+        "Adicionar recurso para personalizar o estilo e conteúdo das notificações",
+        "Fazer teste de notificação com dados reais do usuário",
+        "Criar relatório de abertura e cliques em notificações",
+        "Implementar suporte a múltiplos dispositivos por conta"
       ]
     },
     {
-      "original": "Ranking de desempenho",
-      "summarized": "Desempenho",
+      "original": "Acesso remoto às informações",
+      "summarized": "Acesso",
       "tasks": [
-        "Criar tabela para armazenamento do ranking de jogos",
-        "Implementar lógica para calcular a pontuação dos usuários",
-        "Adicionar opção para filtragem de resultados por jogo ou usuário",
-        "Exibir informações sobre o usuário na página do ranking",
-        "Criar sistema de paginamento para visualização dos resultados",
-        "Permitir que os usuários vejam seus próprios resultados no ranking",
-        "Implementar sorteio e premiação para os jogadores mais bem posicionados",
-        "Realizar validação das informações do usuário antes de inclusão no ranking",
-        "Criar página para visualização dos detalhes da liderança (usuário, tempo de jogo, etc.)",
-        "Adicionar sistema de alerta para anúncio do término da temporada e início da próxima"
-      ]
-    },
-    {
-      "original": "Biblioteca de Jogos Clássicos",
-      "summarized": "Biblioteca",
-      "tasks": [
-        "Criar tabela para armazenamento de games clássicos",
-        "Fazer upload de jogos clássicos em forma de imagens",
-        "Implementar busca por título de jogo ou gênero",
-        "Criar lista de favoritos para os usuários",
-        "Exibir descrição e características dos jogos",
-        "Adicionar opção de filtragem por plataforma",
-        "Inserir campo de pesquisa por nome do jogador no jogo",
-        "Implementar paginação na listagem de jogos",
-        "Criar link para página de detalhes sobre cada jogo",
-        "Exibir vídeos demonstrativos dos jogos clássicos"
+        "Criar página de login com campos para email e senha",
+        "Implementar autenticação com base em usuário e senha",
+        "Fazer login e redirecionar para dashboard",
+        "Criar rota para recuperação de senha",
+        "Enviar email de recuperação de senha",
+        "Validar token de recuperação de senha",
+        "Alterar senha após recuperação",
+        "Implementar bloqueio de contas com senha incorreta",
+        "Criar opção para sair do sistema",
+        "Redirecionar para página de login após logout"
       ]
     }
   ]
