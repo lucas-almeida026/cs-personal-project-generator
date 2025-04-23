@@ -7,6 +7,9 @@ logs/
 *.log
 logs/**/*.log
 
+project.json
+project.txt
+
 .env
 
 dist/
