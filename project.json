@@ -1,101 +1,103 @@
 {
-  "name": "Vida no Controle",
-  "description": "Aprenda a gerenciar sua rotina e diminuir estresse com automação e organização, desde o transporte até os estudos.",
+  "name": "Pronoia App",
+  "description": "Aplicativo de apoio ao aprendizado da pronúncia do inglês, personalizado às necessidades do usuário.",
   "epics": [
     {
-      "original": "Automação de transporte (onibus)",
-      "summarized": "Rota",
+      "original": "Autenticação e Perfil",
+      "summarized": "Autenticação",
       "tasks": [
-        "Criar API para buscar horários de onibus em tempo real",
-        "Implementar filtro de horários por data e hora",
-        "Exibir itinerário de transporte (onibus + intervalo entre eles)",
-        "Adicionar alerta para falta de transporte no dia",
-        "Criar rota de onibus mais eficiente com menor tempo de viagem",
-        "Calcular tempo estimado de chegada ao destino",
-        "Integrar com mapa para exibir rotas e pontos de interesse",
-        "Implementar recurso de compartilhamento da rota",
-        "Exibir histórico de rotas anteriormente usadas",
-        "Permitir editação das rotas favoritas"
+        "Criar conta com nome, email e senha",
+        "Validar email do usuário ao criar conta",
+        "Fazer login com nome e senha",
+        "Implementar logout",
+        "Proteger rotas com token de autenticação",
+        "Adicionar recuperação de senha",
+        "Implementar troca de senha",
+        "Criar perfil do usuário para armazenar dados personalizados",
+        "Permitir edição de nome e email no perfil",
+        "Exibir histórico de logins do usuário no perfil",
+        "Armazenar idiomas preferidos do usuário no perfil"
       ]
     },
     {
-      "original": "Agendamento de tarefas",
-      "summarized": "Agenda",
+      "original": "Treinamento de Pronúncia",
+      "summarized": "Pronúncia",
       "tasks": [
-        "Criar tarefa com descrição e data limite",
-        "Adicionar opção para repetição diária/semanal/mensal",
-        "Implementar remoção de tarefas concluídas",
-        "Fazer listagem das próximas tarefas agendadas",
-        "Agendar eventos não relembrados (alarme)",
-        "Criar evento de lembrete para tarefa em prazo",
-        "Permite adicionar anotação à tarefa",
-        "Fazer listagem das tarefas concluídas",
-        "Listar as próximas ações agendadas",
-        "Agendar eventos de relembramento"
+        "Criar banco de dados com exercícios de pronúncia",
+        "Implementar sistema de classificação dos exercícios (fáceis, moderados e difíceis)",
+        "Desenvolver algoritmo de recomendação de exercícios baseado no desempenho do usuário",
+        "Criar página para exibição das estatísticas de desempenho do usuário",
+        "Implementar sistema de feedback auditivo durante a execução dos exercícios",
+        "Desenvolver painel de controle para administração da base de dados e configurações do aplicativo",
+        "Criar opção de compartilhamento das estatísticas do usuário nas redes sociais",
+        "Implementar autenticação do usuário e armazenamento das informações de login",
+        "Desenvolver sistema de notificações para incentivar o uso do aplicativo",
+        "Criar opção de ajuste das configurações de áudio (volume, velocidade, etc.)"
       ]
     },
     {
-      "original": "Controle de estudo",
-      "summarized": "Estudo",
+      "original": "Biblioteca de Vozes",
+      "summarized": "Biblioteca",
       "tasks": [
-        "Criar página para adicionar disciplinas e turmas",
-        "Implementar calendário de estudos com data e hora marcadas",
-        "Fazer cadastro de tarefas de estudo por disciplina",
-        "Listar atividades de estudo pendentes para o dia",
-        "Permite adicionar notas e observações sobre cada tarefa",
-        "Envio de lembretes por email ou push notification sobre proximos estudos",
-        "Fazer busca e filtragem das disciplinas criadas",
-        "Controle de tempo de estudo para cada disciplina",
-        "Criar dashboard personalizável com gráficos e informações de produtividade",
-        "Recomendação de rotinas de estudos baseado no historico da pessoa"
+        "Criar banco de dados para armazenamento de áudios e metadados",
+        "Realizar upload de áudios em formato MP3 e WAVE",
+        "Desenvolver sistema de busca por palavra ou frase",
+        "Implementar filtro por gênero (masculino, feminino) e região (americano, britânico, etc.)",
+        "Criar página de detalhes para cada áudio (nome da palavra, pronúncia, definição em português)",
+        "Adicionar funcionalidade de download dos áudios",
+        "Desenvolver sistema de classificação das palavras por dificuldade (baixa, média, alta)",
+        "Implementar página de listagem de áudios por categorias (consonantes, vogais, etc.)",
+        "Criar sistema de visualização de gráficos com frequência de uso dos áudios",
+        "Realizar integração com API de dicionário para obtenção de definições em português"
       ]
     },
     {
-      "original": "Integração com calendário pessoal",
-      "summarized": "Calendário",
+      "original": "Personalização e Progresso",
+      "summarized": "Personalização",
       "tasks": [
-        "Criar tela de visualização do calendário",
-        "Integrar com calendários externos como Google Calendar",
-        "Adicionar eventos repetitivos (aniversários, meetings, etc.)",
-        "Implementar notificações para eventos próximos",
-        "Permitir criação de eventos recorrentes",
-        "Exibir evento atual e proximos eventos no topo da tela",
-        "Criar opção de exportação de calendário em formato CSV ou iCal",
-        "Adicionar opção de compartilhamento do calendário com outros usuários",
-        "Implementar busca por eventos pelo nome, data ou descrição",
-        "Exibir estatísticas sobre uso e produtividade do usuário"
+        "Criar formulário de cadastro de usuários",
+        "Implementar questionário de avaliação inicial de pronúncia",
+        "Desenvolver algoritmo para análise do desempenho linguístico",
+        "Criar sistema de classificação dos erros comuns em pronúncia",
+        "Adicionar funcionalidade de ajuste das prioridades de aprendizado",
+        "Implementar visualização da progressão do usuário",
+        "Desenvolver histórico de aulas assistidas e exercícios completados",
+        "Criar sistema de alertas para práticas regulares",
+        "Integrar mídia externa (vídeos, áudios) para ilustração de conceitos",
+        "Implementar busca por unidades gramaticais e vocabulário"
       ]
     },
     {
-      "original": "Notificação e feedback",
-      "summarized": "Feedback",
+      "original": "Interface Usuário e Feedback",
+      "summarized": "Interface",
       "tasks": [
-        "Criar notificação de novas tarefas pendentes",
-        "Implementar sistema de feedback por email",
-        "Adicionar recurso para marcar tarefas como concluídas",
-        "Fazer notificação para reabertura de tarefa pendente",
-        "Criar opção de configurar frequência das notificações",
-        "Implementar feedback por mensagens push no aplicativo",
-        "Adicionar recurso para personalizar o estilo e conteúdo das notificações",
-        "Fazer teste de notificação com dados reais do usuário",
-        "Criar relatório de abertura e cliques em notificações",
-        "Implementar suporte a múltiplos dispositivos por conta"
+        "Criar tela de login com campos para email e senha",
+        "Implementar botão de cadastro de novo usuário",
+        "Desenvolver interface do dashboard principal",
+        "Adicionar campo para busca por palavra em inglês",
+        "Criar lista de palavras aprendidas pelo usuário",
+        "Exibir histórico de tentativas e evolução do usuário",
+        "Implementar sistema de feedback com nota e comentário",
+        "Desenvolver botão para compartilhar progresso nas redes sociais",
+        "Criar pop-up para incentivar a prática diária",
+        "Adicionar opção para visualizar palavras por categoria"
       ]
     },
     {
-      "original": "Acesso remoto às informações",
-      "summarized": "Acesso",
+      "original": "Avaliação e Gráficos de Desempenho",
+      "summarized": "Avaliação",
       "tasks": [
-        "Criar página de login com campos para email e senha",
-        "Implementar autenticação com base em usuário e senha",
-        "Fazer login e redirecionar para dashboard",
-        "Criar rota para recuperação de senha",
-        "Enviar email de recuperação de senha",
-        "Validar token de recuperação de senha",
-        "Alterar senha após recuperação",
-        "Implementar bloqueio de contas com senha incorreta",
-        "Criar opção para sair do sistema",
-        "Redirecionar para página de login após logout"
+        "Criar página de avaliações com opção de escolher nível (iniciante, intermediário, avançado)",
+        "Desenvolver sistema de gravação e replay da pronúncia do usuário durante as avaliações",
+        "Implementar análise automática da pronúncia (comparação com fala de native speaker)",
+        "Criar gráficos de desempenho para exibir evolução no tempo dos usuários",
+        "Desenvolver sistema de feedback personalizado com recomendações de melhoria",
+        "Implementar histórico de avaliações realizadas pelos usuários",
+        "Adicionar opção de compartilhar resultados nas redes sociais",
+        "Criar painel de administração para monitorar desempenho dos usuários",
+        "Desenvolver sistema de notificações com recomendações e dicas de melhoria",
+        "Implementar sistema de regras para definir critérios de aprovação em avaliações",
+        "Criar opção de exportação de resultados para PDF ou CSV"
       ]
     }
   ]

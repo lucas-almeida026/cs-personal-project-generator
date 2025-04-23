@@ -1,12 +1,12 @@
 [item-start](project)  
-	[string](name) Vida no Controle
-	[string](description) Aprenda a gerenciar sua rotina e diminuir estresse com automação e organização, desde o transporte até os estudos.
-	[list-start](epics)
-		[string] Automação de transporte (onibus)
-		[string] Agendamento de tarefas
-		[string] Controle de estudo
-		[string] Integração com calendário pessoal
-		[string] Notificação e feedback
-		[string] Acesso remoto às informações
+	[string](name) Pronoia App  
+	[string](description) Aplicativo de apoio ao aprendizado da pronúncia do inglês, personalizado às necessidades do usuário.
+	[list-start](epics)  
+		[string] Autenticação e Perfil
+		[string] Treinamento de Pronúncia
+		[string] Biblioteca de Vozes
+		[string] Personalização e Progresso
+		[string] Interface Usuário e Feedback
+		[string] Avaliação e Gráficos de Desempenho
 	[list-end]
 [item-end]
