@@ -5,7 +5,7 @@
 ---
 
 This project makes a couple of assumptions about the dev environment:
-- yuu have node installed
+- you have node installed
 - you use ollama to run the local model
 - you rely strictly on system prompts to steer the model
 - you think HTMX is far superior to React in 99% of cases 😏
