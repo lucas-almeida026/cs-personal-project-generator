@@ -52,7 +52,7 @@ Cada épico deve representar uma funcionalidade clara da aplicação, e servirá
 
 ### Diretrizes obrigatórias:
 
-- Gere **ao menos 5 épicos**, e idealmente entre 6 e 8.
+- Gere **ao menos 4 épicos**, e idealmente entre 5 e 7.
 - Cada épico deve representar um módulo funcional claro e específico, como "Autenticação", "Gerenciamento de produtos", "Personalização", etc.
 - Cada épico de ser uma única palavra ou no máximo duas palavras.
 - Não escreva frases curtas para nomear épicos como "Janela de Aprendizado de Inglês", "Integração com Bibliotecas de Música" ou "Gerenciamento de ordens recebidas"

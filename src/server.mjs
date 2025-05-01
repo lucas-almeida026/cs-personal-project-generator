@@ -24,7 +24,24 @@ server.get('/info', (_, res) => {
 
 server.post('/process', async (req, res) => {
 	console.log('[POST] /process')
+	const accepts = req.accepts();
+	if (accepts.length > 1) {
+		return res.status(406).send({
+			error: 'Specify only one type at Accept header',
+		})
+	}
+	let chosenResponseType = accepts[0]
+	if (chosenResponseType === '*/*') {
+		chosenResponseType = 'text/html'
+	}
+	if (chosenResponseType !== 'application/json' && chosenResponseType !== 'text/html') {
+		return res.status(406).send({
+			error: 'Accept header must be application/json or text/html',
+		})
+	}
+
 	const { area, topics, problems, dreams, time } = req.body
+
 	const response = await ollamaApi.projectSuggestor.generate({ area, topics, problems, dreams, time })
 	if (!response || typeof response !== 'string') {
 		return res.status(500).send({
@@ -59,7 +76,11 @@ server.post('/process', async (req, res) => {
 		console.error('Error:', e)
 	}
 	const flatTasks = []
+	const epicNames = []
 	for (const epic of (epics ?? [])) {
+		if (epic && 'summarized' in epic) {
+			epicNames.push(epic.summarized)
+		}
 		for (const task of epic.tasks) {
 			flatTasks.push({
 				name: task,
@@ -67,6 +88,7 @@ server.post('/process', async (req, res) => {
 			})
 		}
 	}
+
 	const html = `<div class="container mx-auto p-4">
 	<h1 class="text-2xl font-bold">${name}</h1>
 	<h3 class="text-slate-700">${description}</h3><br/>
@@ -82,22 +104,15 @@ server.post('/process', async (req, res) => {
 		`).join('')}
 	</div>
 </div>`
-	// ${tasks?.map(task => `
-	// 	<div class="border border-gray-300 rounded-md p-4">
-	// 		<h5 class="text-md font-semibold ">${task?.name}</h5>
-	// 		<p class="text-slate-700 text-sm">${task?.description}</p>
-	// 		<ul class="list-disc ml-5">
-	// 			${task?.related_topics?.map(topic => `<li class="text-slate-700">${topic}</li>`).join('')}
-	// 		</ul>
-	// 	</div>`).join('')}
-	// res.send(`
-	// 	<div style="max-width: 1080px; margin: 0 auto; padding: 16px; overflow-x: auto;">
-	// 		<pre style="white-space: pre-wrap; word-wrap: break-word;">
-	// 			<code class="language-json">${JSON.stringify({ name, description, epics }, null, 2)}</code>
-	// 		</pre>
-	// 	</div>
-	// `)
-	return res.send(html)
+
+	const json = {
+		name,
+		description,
+		tasks: flatTasks,
+		epics: epicNames,
+	}
+
+	return res.send(chosenResponseType === 'application/json' ? json : html)
 })
 
 server.post('/ollama', async (req, res) => {
